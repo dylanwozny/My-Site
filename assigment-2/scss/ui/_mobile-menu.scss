@@ -40,7 +40,7 @@
     align-content: center;
     justify-content: flex-end;
   }
- 
+
  
  
   .mobile-link {
@@ -51,8 +51,12 @@
   .mobile-link a,
   .mobile-link a:link,
   .mobile-link a:visited,
-  .mobile-link a:hover,
   .mobile-link a:active {
     color: white;
     text-decoration: none;
+   
+  }
+
+  .mobile-link a:hover{
+    border-bottom: solid 2px $tomatoRed;
   }
