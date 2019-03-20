@@ -1,0 +1,179 @@
+@import"../mixins/index";
+
+@media (min-width: 780px){
+
+///////////////////// header///////////////////////////////
+
+.button-list{
+display: flex;
+justify-content: center;
+}
+
+.button-list li{
+   margin: 0rem 1rem;
+}
+
+.net-logo{
+    padding-top: 3rem;
+}
+
+////////////// skill-content/////////////////////////////////////////////////
+
+.list-skills{
+    // @mixin flex-parent($flex-directions,$flex-wraping,$justify,$alignment,$content-align)
+    @include flex-parent(row,wrap,center,none,none)
+    
+}
+
+
+.skill-circle{
+    position: absolute;
+    left: 85px;
+    top: 95px;
+    width: 14rem;
+}
+
+
+.skill-percent{
+    flex: 1 1 50%;
+}
+
+.hide-medium{
+    display: none;
+}
+
+.hide-small{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.underline{
+    padding: 0;
+}
+
+.medium-grey,
+.medium-dark
+{
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2rem 0rem;
+    
+}
+
+.medium-grey{
+  color:$darkGrey;
+}
+
+
+.medium-dark{
+    color:$darkBackground;
+}
+/////where to find///////////////////////////////////
+
+.content-find{
+    background-color: $darkGrey;
+}
+
+
+.medium-white{
+    color:white;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: 3rem 0 2rem 0;
+
+}
+
+.number-percent{
+    padding-bottom: 5rem;
+}
+
+.find-list{
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+/////work///////////////////////////////////
+
+.list-card-blue {
+    background-color: $lightGreen;
+    margin-left: 2rem;
+
+}
+
+.list-card-green{
+    background-color: $oceanBlue;
+    margin-left: 27rem;
+}
+
+//// education-content ////////////////////////////////////////////
+
+
+.item-a{
+    grid-area: a;
+}
+.item-b{
+    grid-area: b;
+}
+.item-c{
+    grid-area: c;
+}
+.item-d{
+    grid-area: d;
+}
+
+
+
+
+.edu-card-container{
+   display: grid; 
+   grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    " . a "
+    "b ."
+    ". c"
+    "d .";
+   
+
+}
+
+
+.big-edu-card{
+    padding: 1rem;
+    width: 90%;
+}
+
+
+.edu-card-title{
+    font-size: .9rem; 
+}
+
+.edu-card-date{
+    font-size: .7rem;
+}
+
+.edu-card-site{
+    font-size: .6rem;
+}
+
+.edu-card-school{
+    font-size: .6rem;
+}
+
+.edu-card-text{
+    font-size: 0.6rem;
+}
+
+}
+
+//// Get in Touch ////////////////////////////////////////////
+
+.contact-info{
+    max-width: 408px;
+    margin: 0 auto;
+}

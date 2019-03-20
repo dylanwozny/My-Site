@@ -1,0 +1,14 @@
+@import"../variables/var-colors";
+
+@mixin fontStyle1(){
+    // font-family: 'Rajdhani', sans-serif;
+    // font-weight: 600;
+    // line-height: 1.5;
+    // color: #333;
+    // text-transform: $allUppercase;
+}
+
+@mixin removelinkStyles(){
+    color: black;
+}
+

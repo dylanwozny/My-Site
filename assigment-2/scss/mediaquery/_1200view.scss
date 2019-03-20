@@ -1,0 +1,128 @@
+@media (min-width: 1200px){
+
+
+
+
+.top-menu-svg{
+    width: 2.5rem;
+}
+
+  /////////content-skills///////////////////////
+  
+  
+.skill-circle{
+    position: absolute;
+    left: 185px;
+    top: 95px;
+    width: 14rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+
+svg{
+    width: 6rem;
+}
+
+section{
+    padding: 0rem 5rem;
+
+    
+}
+
+//// work////////////////////////////////////////////
+
+.card-parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 5rem;
+
+}
+
+
+.white-card-bold{
+    font-size: 1.7rem; 
+}
+
+.p-text{
+    font-size: 1.5rem;
+    line-height: 1;
+    padding-bottom: 2rem;
+}
+
+
+.list-card-blue,
+.list-card-green{
+    margin: 0;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    flex: 1 2 40%;
+}
+
+}
+
+//// education-content //////////////////////////////////
+
+
+.edu-card-container{
+    padding: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-template-areas: 
+     " . a a a "
+     "b b b ."
+     ". c c c"
+     "d d d .";
+    
+ 
+ }
+
+
+
+
+.big-edu-card{
+    width: 100%;
+}
+
+.edu-card-title{
+    line-height: 1;
+    font-size: 1.8rem; 
+}
+
+.edu-card-date{
+    line-height: 1.5;
+    color:$tomatoRed;
+    font-size: 1.5rem;
+}
+
+.edu-card-site{
+    line-height: 1.2;
+    color:$textGrey;
+    font-size: 1.3rem;
+}
+
+.edu-card-school{
+    line-height: 1.2;
+    color:$greySvg;
+    font-size: 1.3rem;
+}
+
+.card-head{
+    padding-bottom: 1.3rem;
+}
+
+.edu-card-text{
+    font-size: 1.2rem;
+}
+
+//// Get in Touch ////////////////////////////////////////////
+
+.contact-info{
+    max-width: 608px;
+}
+
+.content-in-touch{
+    padding-top: 3rem;
+}

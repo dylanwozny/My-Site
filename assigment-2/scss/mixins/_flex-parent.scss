@@ -1,0 +1,11 @@
+@mixin flex-parent($flex-directions,$flex-wraping,$justify,$alignment,$content-align){
+
+    display: flex;
+    // row,row-reverse,column,column-reverse
+    flex-direction: $flex-directions; 
+    // nowrap,wrap,wrap-reverse
+    flex-wrap: $flex-wraping;
+    justify-content: $justify;
+    align-items: $alignment;
+    align-content: $content-align;
+}

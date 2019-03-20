@@ -1,0 +1,22 @@
+@mixin button($width,$bcolor,$textcolor){
+    width: $width;
+    background-color: $bcolor;
+    color: $textcolor;
+    padding: 1rem 0rem;
+    // line-height: 200px;
+    border-radius: 5px;
+    
+}
+
+@mixin button-submit($width,$bcolor,$textcolor){
+    width: $width;
+    background-color: $bcolor;
+    color: $textcolor;
+    padding: .5rem 0rem;
+    // line-height: 200px;
+    border-radius: 7px;
+    border: none;
+    margin: 0 auto;
+    margin-top: 3rem;
+
+}

@@ -1,0 +1,19 @@
+// MIXINS = FUNCTIONS!!!!!
+//  A mixin lets you make groups of CSS declarations that you want to reuse throughout your site. You can even pass in values to make your mixin more flexible.
+
+@mixin background-color($color){
+    background-color: $color;
+    padding: 2rem;
+}
+
+@mixin card-border($size, $stroke-color, $shadow-color, $bkg-color){
+    border-bottom: $size solid $stroke-color;
+    box-shadow: 0 0 8px 0 $shadow-color;
+    padding: 1rem;
+    background-color: $bkg-color;
+}
+
+@mixin nav-color($backgcolor,$underlinecolor) {
+    background-color: $backgcolor;
+    border-bottom: 2.5px solid $underlinecolor;
+}

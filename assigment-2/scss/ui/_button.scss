@@ -1,0 +1,26 @@
+@import"../mixins/index";
+
+
+// @mixin button($width,$bcolor,$textcolor){
+//     width: $width;
+//     background-color: $bcolor;
+//     color: $textcolor;
+//     padding: 1rem 0rem;
+//     // line-height: 200px;
+//     border-radius: 5px;
+    
+
+// }
+
+
+.button1{ 
+    @include button(16.5rem,$tomatoRed,white);
+}
+
+.button2{ 
+    @include button(16.5rem,$lightBlue,white);
+}
+
+.button3{
+    @include button-submit(16.5rem,$tomatoRed,white);
+}

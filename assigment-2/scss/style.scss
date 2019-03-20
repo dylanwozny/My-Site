@@ -1,0 +1,315 @@
+@import "reboot/_reboot";
+@import "mixins/_index";
+@import "ui/_index";
+@import "variables/_index";
+@import "typography/_index";
+
+
+
+a{
+    @include removelinkStyles();  
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+///////////globals/////////////////////////////
+
+svg{
+    fill: $textGrey;
+    width: 2.5rem;
+}
+
+body{
+    padding-top: 61px;
+
+}
+
+.white-links,
+figcaption{
+    color: white
+}
+
+.white-links:hover{
+    color: white;
+    
+    
+
+}
+
+////////////////////Nav/////////////////////////////////////
+
+
+
+.icon-view{
+    @include flex-parent(row,none,space-between,stretch,flex-start);
+    padding: .7rem;
+    background-color: $darkBackground;
+}
+
+.page-header,
+.email-name{
+   text-align: center;
+   
+}
+
+/////////////////Header///////////////////////////////////
+
+.page-header{
+    padding: 1.75rem 0rem ;
+    background-color: $darkBackground;
+}
+
+.header-img{
+}
+
+.underline{
+     padding-bottom: 1.2rem;
+     border-bottom: solid 2px $tomatoRed;
+     width: 5rem;
+     margin: 0 auto;
+}
+
+
+.header-name{
+    padding-top: 2.5rem;
+}
+
+.button-list{
+    padding-top: 5rem;
+}
+
+
+.button-list li{
+   margin: 0 auto;
+   margin-bottom: 1rem;
+}
+
+.net-logo{
+    width: 3rem;
+    padding: 2rem 0rem;
+}
+
+//////// skills section//////////////////////////////////////
+
+section{
+    text-align: center;
+}
+
+.content-summary{
+    padding: 8rem 0;
+
+}
+
+.skill-percent{
+
+    padding: 4rem 0rem;
+}
+
+.skill-container{
+    position: relative;
+}
+
+.skill-circle{
+    position: absolute;
+    left: 129px;
+    top: 0px;
+    width: 14rem;
+}
+
+
+
+
+.ux,
+.design,
+.code,
+.analytics
+{
+    border-bottom: solid 2px $tomatoRed;
+    margin: 0 auto;
+    padding-top: 3rem;
+    font-size: .9rem;
+}
+
+
+.ux{
+width: 3rem;
+}
+
+.design{
+    width: 4rem;
+}
+
+.code{
+    width: 2.7rem;
+}
+
+.analytics{
+    width: 5.5rem;
+}
+
+.hide-small{
+    display: none;
+}
+
+.medium-title{
+    color:$darkBackground;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+////// findme //////////////////////////////////////
+
+
+.findme-text{
+  color:$textGrey;
+  padding-top: 1.5rem;  
+  width: 85%;
+  margin: 0 auto;
+}
+
+.find-list{
+    @include flex-parent(row,none,space-between,stretch,flex-start);
+    padding: 3rem 0rem;
+}
+
+
+.find-list-items{
+    flex: 1 1 33%;
+}
+
+.fill-grey{
+    fill:$greySvg;
+}
+
+
+//// work////////////////////////////////////////////
+
+
+.list-card-green,
+.list-card-blue {
+    width: 20rem;
+    border-radius: 7px;
+    margin-top: 3rem;
+    text-align: left;
+    padding:1.5rem;
+}
+
+.list-card-blue {
+    background-color: $oceanBlue;
+    margin-left: 8rem;
+
+
+}
+
+.list-card-green{
+    background-color: $lightGreen;
+    margin-left: 2rem;
+    
+ 
+}
+
+//// education-content ////////////////////////////////////////////
+
+.edu-header{
+    margin-bottom: 5rem;
+}
+
+.education-content{
+    background-color: $greyBack;
+    margin-top: 3rem;
+    padding: 2rem 0 ;
+}
+
+
+
+.big-edu-card{
+    background-color: $darkBackground;
+    padding: 1.5rem;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+}
+
+
+.edu-card-title{
+    color:white;
+    line-height: 1;
+    font-size: 1.3rem; 
+}
+
+.edu-card-date{
+    line-height: 1.5;
+    color:$tomatoRed;
+    font-size: 1rem;
+}
+
+.edu-card-site{
+    line-height: 1.2;
+    color:$textGrey;
+    font-size: .8rem;
+}
+
+.edu-card-school{
+    line-height: 1.2;
+    color:$greySvg;
+    font-size: .8rem;
+}
+
+.card-head{
+    padding-bottom: 1rem;
+}
+
+.edu-card-text{
+    font-size: 0.9rem;
+}
+
+//// footer ////////////////////////////
+
+
+.content-in-touch{
+    padding: 10rem 0rem 2rem 0rem; 
+}
+
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0 5% 0 5%;
+    width: 90%;
+}
+
+
+label[for="name"],
+label[for="email"],
+label[for="message"]{
+    padding: 2rem 0rem .5rem 0rem;
+    padding-right: 90%;
+}
+
+input[type="text"],
+.text-input{
+    border-radius: 5px;
+    border: 1px solid $darkBackground;   
+}
+
+.text-input{
+    height: 10rem;
+}
+
+
+
+@import "mediaquery/780view";
+@import "mediaquery/1200view";
